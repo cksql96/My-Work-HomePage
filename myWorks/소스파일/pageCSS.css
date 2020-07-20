@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: overline;
+  color: blue;
+}
+#page {
+  font-size: 30px;
+  padding-top: 7px;
+  text-align: center;
+  font-weight: bold;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+#header {
+  height: 60px;
+  background-color: #dddddd;
+  width: 790px;
+}
+
+#red {
+  color: red;
+}
+
+#blue {
+  color: blue;
+}
+
+#Yellow {
+  color: yellow;
+}
+
+#Green {
+  color: green;
+}
+
+#Purple {
+  color: purple;
+}
+
+#Orange {
+  color: orange;
+}
+
+#White {
+  color: white;
+}
+
+#logo {
+  width: 220px;
+  height: 55px;
+  font-family: arial;
+  float: left;
+}
+
+body {
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-image: url(3.jpg);
+}
+
+hr {
+  width: 790px;
+  border: 1px solid black;
+  margin-top: 40px;
+  /* solid dotted dashed double groove ridge inset outset */
+}

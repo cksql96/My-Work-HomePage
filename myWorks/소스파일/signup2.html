@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>회원가입</title>
+  <script src="data.js"></script>
+  <style>
+    @import url('pageCss.css');
+
+    ul {
+      list-style-type: none;
+    }
+    .hr{
+      margin-top: 20px;
+      border : 2px solid;
+      color : #1b894d;
+      width:790px;
+    }
+
+    #mem_title {
+      width: 790px;
+      height: 25px;
+      margin-top: 10px;
+      text-align: left;
+    }
+    #mem_form {
+      width: 700px;
+      font-family: 돋움;
+      font-size: 12px;
+      color: #888888;
+      padding-top: 5px;
+    }
+    .row {
+      height: 30px;
+      margin-top: 10px;
+      border: 1px solid;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-color: #cccccc;
+    }
+    input{
+      width: 80px;
+      height: 16px;
+      border: 1px solid;
+      border-color: #cccccc;
+    }
+    select {
+      width: 80px;
+      height: 20px;
+      border: 1px solid;
+      border-color: #cccccc;
+      font-size: 12px;
+    }
+    .col1, .col2{
+      float: left;
+    }
+    .col1 {
+      text-align: right;
+      width: 120px;
+    }
+    .col2 {
+      margin-left: 10px;
+    }
+    #form {
+      margin-right: 30px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      margin-left: 30px;
+      background-color: white;
+      width: 790px; height: 500px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <center>
+    <div id="header">
+      <div id="page">
+        <a href="signup_in.html"><c id="blue">Sign</c></a>
+        <a style="color:rgb(27, 196, 65);">Up</a>
+      </div>
+    </div>
+  </center>
+  <!-- ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
+
+  <br />
+
+  <center>
+    <table>
+      <td>
+        <a href="CHAN.html">
+          <div id="logo">
+            <img src="1.jpg" height="50" width="50" />
+            <b>
+              <c id="blue" style="font-size: 55px;">CHAN</c>
+            </b>
+          </div>
+        </a>
+      </td>
+    </table>
+    <hr />
+  </center>
+  <!-- ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
+  <br />
+  <center>
+    <form id="form">
+      <div id="mem_title">
+        > 회원가입정보 (*표시 필수작성)<hr class="hr";/>
+      </div>
+      <br /><br />
+
+      <form>
+        <ul id="mem_form">
+          <li class="row">
+            <ul class="item">
+              <li class="col1">*아이디 &nbsp;</li>
+              <li class="col2">
+                <ul>
+                  <li style="float: left"><input type="text" id="ID" /> </li>
+                  <li style="float: left">&nbsp;&nbsp;<input style="height:20px;" type="button"
+                    value="중복확인" onclick="alert('중복이 아닙니다 말복입니다')" /> </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li class="row">
+            <ul class="item">
+              <li class="col1"> *비밀번호 </li>
+              <li class="col2">
+                <ul>
+                  <li style="float: left"><input type="password" id="PASSWORD"/> </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li class="row" id="pw_confirm">
+            <ul class="item">
+              <li class="col1"> *비밀번호 확인 </li>
+              <li class="col2">
+                <ul>
+                  <li><input type="password" id="PASSWORDCHECK"/> </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li class="row" id="name">
+            <ul class="item">
+              <li class="col1"> *이름 </li>
+              <li class="col2">
+                <ul>
+                  <li><input type="text" id="NAME"/> </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li class="row" id="birthday">
+            <ul class="item">
+              <li class="col1"> 생년월일 </li>
+              <li class="col2">
+                <ul>
+                  <li style="float:left"><input style="width:40px;" type="text" </li>
+                  <li style="float:left">년&nbsp;&nbsp; </li>
+                  <li style="float:left"><input style="width:20px;" type="text" </li>
+                  <li style="float:left">월&nbsp;&nbsp; </li>
+                  <li style="float:left"><input style="width:20px;" type="text" </li>
+                  <li style="float:left">일&nbsp;&nbsp; </li>
+                  <li style="float:left"><input style="width:10px;" type="radio" name="year" checked /> </li>
+                  <li style="float:left">음력 &nbsp;&nbsp; </li>
+                  <li style="float:left"><input style="width:10px;" type="radio" name="year" /> </li>
+                  <li style="float:left">양력 </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li class="row" id="email">
+            <ul class="item">
+              <li class="col1"> *이메일 </li>
+              <li class="col2">
+                <ul>
+                  <li><input type="text" style="width:200px;" id="EMAIL"/> </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li class="row">
+            <ul class="item">
+              <li class="col1"> 휴대전화 </li>
+              <li class="col2">
+                <ul>
+                  <li style="float:left"><input style="width: 30px;" type="text" </li>
+                  <li style="float:left">- </li>
+                  <li style="float:left"><input style="width: 40px;" type="text" </li>
+                  <li style="float:left">- </li>
+                  <li style="float:left"><input style="width:40px;" type="text" </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li class="row" id="job">
+            <ul class="item" >
+              <li class="col1"> 직업 </li>
+              <li class="col2">
+                <ul>
+                  <li>
+                    <select>
+                      <option>직업선택 </option>
+                      <option>직장인 </option>
+                      <option>사업가 </option>
+                      <option>학생 </option>
+                      <option>기타 </option>
+                    </select>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li class="row" id="target">
+            <ul class="item">
+              <li class="col1"> 가입목적 </li>
+              <li class="col2">
+                <ul>
+                  <li style="float:left"><input style="width:10px;" type="checkbox" checked/> </li>
+                  <li style="float:left">찬하가잘생겨서 &nbsp; </li>
+                  <li style="float:left"><input style="width:10px;" type="checkbox" /> </li>
+                  <li style="float:left">사진보고싶어서 &nbsp;</li>
+                  <li style="float:left"><input style="width:10px;" type="checkbox" /> </li>
+                  <li style="float:left">심심해서 &nbsp;</li>
+                  <li style="float:left"><input style="width:10px;" type="checkbox" /> </li>
+                  <li style="float:left">기타 </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>  <!-- mem_form -->
+        <br />
+
+        <div id="buttons" style="text-align: center">
+          <button type="button" onclick="alert('취소합니다'); window.location.href='signup_in.html';"> > 가입취소</button>&nbsp;
+          <button type="button" onclick="SignupCheck();"> > 가입완료</button>
+        </div>
+
+
+
+      </form>
+    </form>
+
+  </center>
+  <script>
+    function SignupCheck() {
+      var checkID = document.getElementById("ID").value;
+      var checkPASSWORD = document.getElementById("PASSWORD").value;
+      var checkPASSWORDCHECK = document.getElementById("PASSWORDCHECK").value;
+      var checkNAME = document.getElementById("NAME").value;
+      var checkEMAIL = document.getElementById("EMAIL").value;
+
+      if(checkID == "" || checkPASSWORD =="" || checkPASSWORDCHECK == "" || checkNAME == "" || checkEMAIL == ""){
+        alert("얌마 뭐가 빠졌잖어~~!");
+      }
+      else if(checkPASSWORD != checkPASSWORDCHECK){
+        alert("비밀번호와 비밀번호 확인이 다릅니다!!")
+      }
+      else {
+        alert("가입되었어요~");
+        location.href='CHAN1.html';
+      }
+    }
+  </script>
+
+
+</body>
+
+</html>

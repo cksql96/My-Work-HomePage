@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>회원가입 확인</title>
+  <style>
+    @import url('pageCss.css');
+  </style>
+</head>
+
+<body>
+
+  <center>
+    <div id="header">
+      <div id="page">
+        <a href="signup_in.html"> <c id="blue">Sign</c></a>
+        <a style="color:rgb(27, 196, 65);">Up</a>
+      </div>
+    </div>
+  </center>
+  <!-- ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
+
+  <br />
+
+  <center>
+    <table>
+      <td>
+        <a href="CHAN.html">
+          <div id="logo">
+            <img src="1.jpg" height="50" width="50" />
+            <b>
+              <c id="blue" style="font-size: 55px;">CHAN</c>
+            </b>
+          </div>
+        </a>
+      </td>
+    </table>
+    <hr />
+  </center>
+  <!-- ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
+  <br />
+  <center>
+    <table>
+      <tr>
+        <td>
+          찬하의 주민번호 앞 6자리는?
+        </td>
+        <td>
+          <input type="text" placeholder="예)990101" id="SSN" />
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          찬하는 몇학번인가요?
+        </td>
+        <td>
+          <input type="text" placeholder="예)16" id="SID" />
+        </td>
+      </tr>
+    </table>
+
+    <button type="submit" id="checkSignUp" onclick="check();">제출하기</button>
+    <button type="submit" id="return" onclick="location.href='signup_in.html'">돌아가기</button>
+    <p>
+      힌트 : 찬하는 1996년도 7월 3일에 태어났음. <br />
+      그리고 16년도에 첫 4년제 대학교 졸업함. <br />
+      틀려도 각종 설정 해놨으니 해봐도 재밌음.
+    </p>
+
+    <script>
+      function check() {
+        var inputSSN = document.getElementById("SSN").value;
+        temp1 = inputSSN;
+        var inputSID = document.getElementById("SID").value;
+        temp2 = inputSID;
+
+        if (temp1 == 960703 && temp2 == 12) {
+          var userInput = prompt("당신의 이름은?");
+
+          if(userInput == "황찬하")
+          {
+            alert(userInput +"님 당신은 관리자아인교~!");
+            location.href = "CHAN1.html";
+          }
+          else if(userInput == "박혜민"){
+            alert(userInput +"님은 바로바로 황찬하님의 여자친구!!! 사랑해 혜민아 <3");
+            location.href = "CHAN1.html";
+          }
+          else if(userInput == null){
+            alert("취소하였습니다. 회원가입 페이지로 돌아갑니다.");
+            location.href = "signup_in.html";
+          }
+          else if(userInput ==""){
+            alert("아무거나 좀 써라잉 에잇 돌아가라");
+            location.href = "signup_in.html";
+          }
+          else{
+            alert(userInput+ "님 환영합니다~");
+            location.href = "signup1.html";
+          }
+        }
+        else {
+          var result = confirm("찬하 아는거 맞냐?");
+          if(result) {
+            alert("웃기고 있네!! 그러면서 틀리냐? 처음으로 가라잉");
+          }
+          else{
+            alert("근데 왜 회원가입하려고함? 처음으로 가라잉");
+          }
+          location.href ="../CHECKPAGE.html";
+        }
+
+      }
+    </script>
+  </center>
+
+
+</body>
+
+</html>

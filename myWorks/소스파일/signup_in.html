@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>로그인 및 회원가입</title>
+  <style>
+    @import url('pageCss.css');
+    .sign_up{
+      background: rgb(27, 196, 65);
+      color: #fff;
+      border: none;
+      position: relative;
+      width: 250px; height: 200px;
+      font-size: 1.6em;
+      padding: 0 2em;
+      cursor: pointer;
+      transition: 800ms ease all;
+      outline: none;
+    }
+
+    .sign_up:hover {
+      background: #fff;
+      color: rgb(27, 196, 65);
+    }
+
+
+    .sign_up:before{
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 2px;
+      width: 0;
+      background: rgb(27, 196, 65);
+      transition: 400ms ease all;
+    }
+
+    .sign_up:after{
+      right: inherit;
+      top: inherit;
+      left: 0;
+      bottom: 0;
+    }
+
+    .sign_up:hover:before,
+    .sign_up:hover:after{
+      width: 100%;
+      transition: 800ms ease all;
+    }
+
+  </style>
+</head>
+
+  <body>
+
+    <center>
+      <div id="header">
+        <div id="page"> <a id="blue">Sign</a> <a style="color:rgb(27, 196, 65);">Up</a>
+          <a id="red">And</a> <a id="Purple">In</a> </div>
+      </div>
+    </center>
+    <!-- ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
+
+    <br />
+
+    <center>
+      <table>
+        <td>
+          <a href="CHAN.html">
+            <div id="logo">
+              <img src="1.jpg" height="50" width="50" />
+              <b> <c id="blue" style="font-size: 55px;">CHAN</c> </b>
+            </div>
+          </a>
+        </td>
+      </table>
+      <hr />
+    </center>
+    <!-- ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
+    <br />
+    <center>
+    <table>
+      <td>
+        <a href="signup.html"><button type="button" class="sign_up"><b>회원가입 및 로그인</b>
+            <c style="color:rgb(27, 196, 65);"><br />[<b>조건-</b><br />찬하를<br />아나요?]</c>
+          </button></a>
+      </td>
+    </table>
+    </center>
+
+</body>
+
+</html>

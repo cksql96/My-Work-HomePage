@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>찬하페이지</title>
+  <script src="advertise.js"></script>
+  <style>
+  @import url('pageCss.css');
+
+    ul {
+      margin-left: 30px;
+    }
+
+
+    /* -------------------------------------------------------------------- */
+
+    #search {
+      height: 50px; width: 55px;
+      background-color: #1258; color: blue;
+      font-weight: bold;
+      border: none;
+    }
+
+    /* -------------------------------------------------------------------- */
+    #advAndLog_in {
+      height: 300px; width: 650px;
+      float: left;
+    }
+
+    /* 인터넷 참조했음 : https://nanati.me/css-button-design/ */
+    #log_in {
+      background: #1AAB8A; color: #fff;
+      border: none;
+      position: relative;
+      height: 250px; width: 220px;
+      font-size: 1.6em;
+      padding: 0 2em;
+      cursor: pointer;
+      transition: 800ms ease all;
+      outline: none;
+    }
+
+    #log_in:hover {
+      background: #fff; color: #1AAB8A;
+    }
+
+    #log_in:before,
+    #log_in:after {
+      content: '';
+      position: absolute;
+      top: 0; right: 0;
+      height: 2px; width: 0;
+      background: #1AAB8A;
+      transition: 400ms ease all;
+    }
+
+    #log_in:after {
+      right: inherit; top: inherit; left: 0; bottom: 0;
+    }
+
+    #log_in:hover:before,
+    #log_in:hover:after {
+      width: 100%;
+      transition: 800ms ease all;
+    }
+
+    /* -------------------------------------------------------------------- */
+    /* 인터넷 참조했음 : https://kitty-lee.tistory.com/47 */
+    #Google {
+      background-color: #86efef;
+      width: 100px; height: 100px;
+      border-radius: 75px;
+      text-align: center;
+      margin: 0 auto; margin-left: 20px;
+      font-size: 20px;
+      vertical-align: middle;
+      line-height: 100px;
+      float: left;
+    }
+
+    #Naver {
+      background-color: #86efef;
+      width: 100px; height: 100px;
+      border-radius: 75px;
+      text-align: center;
+      margin: 0 auto; margin-left: 20px;
+      font-size: 20px;
+      vertical-align: middle;
+      line-height: 100px;
+      float: left;
+    }
+
+    #Daum {
+      background-color: #86efef;
+      width: 100px; height: 100px;
+      border-radius: 75px;
+      text-align: center;
+      margin: 0 auto; margin-left: 20px; margin-right: 70px;
+      font-size: 20px;
+      vertical-align: middle;
+      line-height: 100px;
+      float: left;
+    }
+
+    /* -------------------------------------------------------------------- */
+    #post {
+      border: 1px solid;
+      width: 350px; height: 110px;
+    }
+
+    /* -------------------------------------------------------------------- */
+    /* 인터넷 참조했음 : https://nanati.me/css-button-design/ */
+    #Git {
+      width: 400px; height: 170px;
+      margin-left: 50px;
+      float: left;
+    }
+
+    .color-bg-start {
+      background-color: salmon;
+    }
+
+    .bg-animate-color {
+      animation: random-bg .5s linear infinite;
+    }
+
+    @keyframes random-bg {
+      from {
+        filter: hue-rotate(0);
+      }
+
+      to {
+        filter: hue-rotate(360deg);
+      }
+    }
+
+    .GitHub {
+      background-color: salmon;
+      color: white;
+      padding: 20px 60px;
+      border: none;
+      transition: all .3s ease;
+      border-radius: 10px;
+      letter-spacing: 2px;
+      cursor: pointer;
+      font-weight: bold; font-family: arial; font-size: 25px;
+      margin-top: 18px;
+    }
+
+    /*마우스 올렸을시 */
+    .GitHub:hover {
+      animation: random-bg .5s linear infinite, grow 1300ms ease infinite;
+    }
+
+    /*커졌다가 안커졌다가 하는것*/
+    .start-fun {
+      background-color: #fff !important;
+      color: salmon !important;
+    }
+
+    @keyframes grow {
+      0% {
+        transform: scale(1);
+      }
+
+      14% {
+        transform: scale(1.3);
+      }
+
+      28% {
+        transform: scale(1);
+      }
+
+      42% {
+        transform: scale(1.3);
+      }
+
+      70% {
+        transform: scale(1);
+      }
+    }
+
+    /* -------------------------------------------------------------------- */
+    #pic {
+      width: 300px; height: 130px;
+      background-image: url('1.jpg');
+      text-align: center;
+    }
+
+    .pics {
+      font-family: arial; font-size: 20px; font-weight: bold;
+    }
+
+    /* -------------------------------------------------------------------- */
+    /* -------------------------------------------------------------------- */
+    /* -------------------------------------------------------------------- */
+  </style>
+
+</head>
+
+<body>
+
+  <center>
+    <div id="header">
+      <div id="page"> <a id="red">H</a> <a id="blue">O</a>
+        <a id="Yellow">M</a> <a id="Green">E</a> </div>
+    </div>
+  </center>
+
+  <!-- ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
+  <br />
+
+  <center>
+    <table>
+      <td>
+        <a href="CHAN1.html">
+          <div id="logo">
+            <img src="1.jpg" height="50" width="50" />
+            <b> <c id="blue" style="font-size: 55px;">CHAN</c> </b>
+          </div>
+        </a>
+      </td>
+
+      <td>
+        <div>
+      <td>
+        <input type="text" placeholder="아무거나 작성해보슈" id="input" style="height:50px; width: 450px; margin-left: 30px; font-size :24px;" />
+      </td>
+      <td>
+        <button type="submit" id="search" onclick="searching(); window.open('https://search.naver.com/search.naver?sm=top_hty&fbm=1&ie=utf8&query='+temp);">검색</button>
+      </td>
+      </div>
+      </td>
+    </table>
+    <hr />
+  </center>
+
+  <script>
+    function searching() {
+      var input = document.getElementById("input").value;
+      temp = input;
+    }
+
+    input.addEventListener(
+      "keyup",
+      function(event) {
+        if (event.keyCode === 13) {
+          event.preventDefault();
+          document.getElementById("search").click();
+        }
+      }
+    );
+  </script>
+
+  <!-- ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
+  <br /><br />
+  <center>
+    <table>
+      <td>
+        <img id="adv_img" src="2.jpg" width="550px;" height="300px;" style="margin-right : 10px;" />
+      </td>
+      <td>
+        <a href="#"><button type="button" id="log_in" onclick="alert('탈퇴 합니다!!'); location.href='CHAN.html';">
+            탈퇴<br />하기<br /></button></a>
+      </td>
+    </table>
+    <hr />
+  </center>
+
+  <!-- ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
+  <br /><br />
+  <center>
+    <table>
+      <td>
+        <a href="http://www.google.com" target="_blank">
+          <div id="Google">Google</div>
+        </a>
+      </td>
+      <td>
+        <a href="http://www.naver.com" target="_blank">
+          <div id="Naver">Naver</div>
+        </a>
+      </td>
+      <td>
+        <a href="http://www.hanmail.net" target="_blank">
+          <div id="Daum">Daum</div>
+        </a>
+      </td>
+
+      <td>
+        <table id="post" style="background-color:white;">
+          <tr>
+            <td> <a href="#" style="font-size:25px;
+              font-weight:bold;">게시물(미구현)</a> </td>
+            <td> </td>
+          </tr>
+
+          <tr>
+            <td>
+              <ul>
+                <li>
+                  <a href="#">찬하 잘생김</a>
+                </li>
+              </ul>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <ul>
+                <li>
+                  <a href="#">이제 앎?</a>
+                </li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+      </td>
+
+    </table>
+    <hr />
+  </center>
+
+  <!-- ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
+  <br /><br />
+
+  <center>
+    <table>
+      <td>
+        <div id="Git">
+          <button class="GitHub" onclick="alert('깃허브로 이동합니다');window.open('https://github.com/cksql96')">Go To
+            <br />CHAN's <br />GitHub</button>
+        </div>
+      </td>
+
+      <td>
+        <div>
+          <table id="pic">
+            <tr>
+              <td class="pics">
+                <a href="CHANPic1.html">찬하의 사진!!!</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </td>
+    </table>
+  </center>
+
+</body>
+
+</html>
